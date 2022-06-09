@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.bg-main{
+  background: #32AC8C;
+}
+
+.family-bitter{
+  font-family: 'Bitter', serif;
+}
+
+.color-main{
+  color:#32AC8C
+}
+
+.sec-color,i{
+  color:#5d5d5d;
+}
+
+.third-color{
+  color:#22abc0
+}
+
+i{
+  transition: .6s;
+}
+.i-edit:hover{
+  color:#32AC8C
+}
+
+.i-trash:hover{
+  color:#dd1d03
+}
+
+.buton-send{
+  border: 1px solid #32AC8C!important;
+  color: #32ac8c !important;
+  transition: .6s!important;
+}
+
+.buton-send:hover{
+  background-color: #32AC8C;
+  color: #fff !important;
+}
