@@ -50,12 +50,12 @@ export default function EditarEspecialidad() {
     useEffect(()=>{
         const mostrarEspecialidad = async () =>{
             try{
-                const especialidadObtenida =await getEspecialidades()
+                // const especialidadObtenida =await getEspecialidades()
 
-                const infoEspecialidad = especialidadObtenida.map(({esp_nom, esp_des})=>{
-                    return {esp_nom:esp_nom,esp_des:esp_des}
-                })
-                setEspecialidad(infoEspecialidad)
+                // const infoEspecialidad = especialidadObtenida.map(({esp_nom, esp_des})=>{
+                //     return {esp_nom:esp_nom,esp_des:esp_des}
+                // })
+                // setEspecialidad(infoEspecialidad)
                 
                 const especialidadEditar = await getEspecialidadesPorId(idEsp)
 

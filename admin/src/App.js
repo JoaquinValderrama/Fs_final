@@ -6,6 +6,8 @@ import CrearEspecialidadView from "./views/CrearEspecialidadView"
 import EditarEspecialidad from "./views/EditarEspecialidad"
 import MedicoView from "./views/MedicoView"
 import CrearMedico from "./views/CrearMedico"
+import PacienteView from "../src/views/PacientesView.js"
+import EditarPaciente from "./views/EditarPaciente"
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
        <Route path="/editarEspecialidad/especialidad/:idEsp" element={<EditarEspecialidad/>}></Route>
        <Route path="/crearEspecialidad" element={<CrearEspecialidadView/>}></Route>
        <Route path="/crearMedico" element={<CrearMedico/>}></Route>
+       <Route path="/" element={<PacienteView/>}></Route>
+       <Route path="/editarPaciente/paciente/:idPac" element={<EditarPaciente/>}></Route>
     </Routes>
    </div>
    </Router>

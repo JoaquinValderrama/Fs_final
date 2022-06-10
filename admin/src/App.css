@@ -82,3 +82,9 @@ i{
   background-color: #32AC8C;
   color: #fff !important;
 }
+
+.img-pac{
+  width: 15vw;
+  border-radius: 50%;
+  border: 5px solid #32AC8C
+}

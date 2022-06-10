@@ -31,13 +31,6 @@ export default function MedicoView() {
     },[])
 
 
-    // const relacionState (){
-
-    //     if (especialidad.esp_id === medico.especialidadId )
-    //         ,,,medico
-    // }
-
-
   return (
     <div>
         <div className="card mt-5">
@@ -47,6 +40,7 @@ export default function MedicoView() {
                 <table className="table mt-4">
                     <thead className="table-purple family-bitter color-main">
                         <tr>
+                            <th className="text-center">DNI</th>
                             <th className="text-center">Nombre</th>
                             <th className="text-center">Apellido</th>
                             <th className="text-center">Correo</th>
@@ -56,6 +50,9 @@ export default function MedicoView() {
                     <tbody>
                     {medico.map((item,indice)=>(
                         <tr key={indice}>
+                              <td className="sec-color col-sm-12-col-md-4">
+                                {item.med_dni}
+                            </td>
                             <td className="sec-color col-sm-12-col-md-4">
                                 {item.med_nom}
                             </td>
